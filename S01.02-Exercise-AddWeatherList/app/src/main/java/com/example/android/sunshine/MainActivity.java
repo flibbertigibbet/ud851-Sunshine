@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 "Tornado watch"
         };
 
-        // TODO (4) Append each String from the fake weather data array to the TextView
+        for (String weather: weatherData) {
+            mWeatherDisplay.append(weather + "\n\n\n");
+        }
     }
 }
